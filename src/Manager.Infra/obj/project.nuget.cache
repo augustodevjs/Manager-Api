@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HqPAB7EvY08QK7Rx6b7Ls38QBHq+Wx0CIVwhJJ1cSrKvRrLoCgal0B/r6khkLLtB0AEmIBKnabSdrtANpYvTtw==",
+  "dgSpecHash": "BSps7qKKBJf+Lt3eAxR0OZbXLRIlntn2UmmEw428bY6xPmvFR/HOy9tuouFHdt5GZtu/oK8gduVjfn1pkCOtOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\joaoa\\source\\repos\\Manager\\src\\Manager.Infra\\Manager.Infra.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\joaoa\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512"
+  ],
   "logs": []
 }
