@@ -9,9 +9,7 @@
         public string Email { get; private set; }
         public string Password { get; private set; }
 
-        protected User()
-        {
-        }
+        protected User() {}
 
         public User(string name, string email, string password)
         {

@@ -13,13 +13,7 @@ public class DomainException : Exception
         _errors = errors;
     }
 
-    public DomainException(string message) : base(message)
-    {
-        
-    }
+    public DomainException(string message) : base(message) {}
 
-    public DomainException(string message, Exception innerException) : base(message, innerException)
-    {
-        
-    }
+    public DomainException(string message, Exception innerException) : base(message, innerException) { }
 }
