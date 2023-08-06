@@ -51,7 +51,7 @@ public class UserService: IUserService
     {
         var userExists = await _userRepository.Get(userDto.Id);
 
-        if (userExists != null)
+        if (userExists == null)
             throw new DomainException("Não existe nenhum usuário com o id informado!");
 
         var user = _mapper.Map<User>(userDto);
