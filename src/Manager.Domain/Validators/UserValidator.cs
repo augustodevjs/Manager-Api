@@ -13,13 +13,13 @@ public class UserValidator : AbstractValidator<User>
 
         RuleFor(x => x.Name)
             .NotEmpty().WithMessage("O Nome não pode ser vazio.")
-            .NotNull().WithMessage("O Nome não pode Ser nulo.")
+            .NotNull().WithMessage("O Nome não pode ser nulo.")
             .MinimumLength(3).WithMessage("O Nome deve ter no minimo 3 caracteres.")
             .MaximumLength(80).WithMessage("O Nome deve ter no máximo 80 caracteres.");
         
         RuleFor(x => x.Email)
             .NotEmpty().WithMessage("O Email não pode ser vazio")
-            .NotNull().WithMessage("O Email não pode Ser nulo")
+            .NotNull().WithMessage("O Email não pode ser nulo")
             .MinimumLength(3).WithMessage("O Email deve ter no minimo 3 caracteres")
             .MaximumLength(80).WithMessage("O Email deve ter no máximo 100 caracteres")
             .Matches(@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$")

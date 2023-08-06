@@ -18,8 +18,9 @@ public class UserRepository : BaseRepository<User>, IUserRepository
     {
         var user = await _context.Users
             .Where(x => x.Email.ToLower() == email.ToLower())
-            .AsNoTracking().ToListAsync();
-        
+            .AsNoTracking()
+            .ToListAsync();
+
         return user.FirstOrDefault();
     }
 
@@ -27,7 +28,8 @@ public class UserRepository : BaseRepository<User>, IUserRepository
     {
         var allUsers = await _context.Users
             .Where(x => x.Email.ToLower().Contains(email.ToLower()))
-            .AsNoTracking().ToListAsync();
+            .AsNoTracking()
+            .ToListAsync();
         
         return allUsers;
     }
@@ -36,7 +38,8 @@ public class UserRepository : BaseRepository<User>, IUserRepository
     {
         var allUsers = await _context.Users
             .Where(x => x.Name.ToLower().Contains(nome.ToLower()))
-            .AsNoTracking().ToListAsync();
+            .AsNoTracking()
+            .ToListAsync();
         
         return allUsers;
     }
